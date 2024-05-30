@@ -10,7 +10,7 @@ body{
 }
 nav{
     display: flex;
-    max-width: 500px;
+    max-width: 550px;
     justify-content: end;
     gap: 20px;
     align-items: center;
