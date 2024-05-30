@@ -1,0 +1,317 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.hero-img video{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+nav{
+    display: flex;
+    max-width: 500px;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+nav h4{
+font-weight: 100;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    top: 0px;
+}
+.nav-title2{
+    border-bottom: solid 3px;
+    line-height: 35px;
+}
+.dots{
+    font-size: large;
+}
+.sub-header-container{
+
+    margin: auto;
+}
+.flex-content{
+    display: flex;
+   gap: 200px;
+   justify-content: center;
+   margin-top: 50px;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-bottom: 20px;
+}
+.text-container{
+    max-width: 50%;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.icon-flex{
+    max-width: 90%;
+    font-size: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    border-bottom: solid 10px black;
+    line-height: 0px;
+    line-height: 150px;
+    margin: 0;
+}
+.icon-flex2{
+    max-width: 35%;
+    font-size: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    line-height: 0px;
+}
+button{
+    margin-left: 250px;
+    padding: 5px 20px 5px 20px ;
+    background-color: white;
+    border-radius: 25px;
+    border: solid #cecece 2px;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+
+.img-flex-section {
+    display: flex;
+    max-width: 90%;
+    gap: 25px;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 90px;
+    border-bottom: solid 2px lightgray;
+}
+
+.individual-img-text-container {
+    max-width: 30%;
+    background-color: wheat;
+    opacity: 0; /* Start with images hidden */
+    transform: translateY(50px); /* Start with images shifted down */
+    transition: transform 0.6s ease, opacity 0.6s ease; /* Add transition for smooth effect */
+}
+
+.individual-img-text-container img {
+    max-width: 100%;
+    max-height: 500px;
+    min-width: 455px;
+    transform: rotate(-10deg); /* Initial rotation */
+    object-fit: cover;
+    transition: transform 1.6s ease; /* Add transition for smooth effect */
+}
+
+.individual-img-text-container.in-view {
+    opacity: 1; /* Show images when in view */
+    transform: translateY(0); /* Move images to final position */
+}
+
+.individual-img-text-container.in-view img {
+    transform: rotate(4deg); /* Rotate to final position */
+}
+
+.img-subtext-container {
+    padding-left: 20px;
+    max-width: 60%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.horizontal-drag-slide-container {
+    padding-top: 90px;
+    position: relative;
+    margin-left: 10%;
+}
+
+.hori-slide-title {
+    max-width: 200px;
+}
+
+.drag-section {
+    display: flex;
+    overflow-x: scroll;
+    gap: 100px;
+    padding-bottom: 90px;
+    cursor: grab;
+}
+.sticky-note{
+    background-color: rgb(255, 255, 180);
+    min-width: 22%;
+    min-height: 325px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 13px 2px lightgray;
+    transform: rotate(5deg);
+}
+.sticky-note2{
+    background-color: rgb(250, 250, 207);
+    min-width: 22%;
+    min-height: 325px;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 13px 2px lightgray;
+    transform: rotate(-4deg);
+    margin: 20px;
+}
+.drag {
+    min-width: 22%;
+    min-height: 325px;
+    background-color: rgb(252, 252, 144);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 13px 2px lightgray;
+    transform: rotate(359deg);
+}
+.individual-news.b{
+background-color: #c8e7dd;
+}
+.individual-news.p{
+background-color: #ffe9ec;
+}
+.individual-news.be{
+background-color: beige;
+}
+.individual-news.t{
+background-color: #98baba;
+}
+.individual-news.o{
+background-color: #f1ce90;
+}
+
+
+.drag-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(245, 138, 174);
+    border-radius: 5px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+}
+.drag-section::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.background-blend-section {
+    display: flex;
+    margin: auto;
+    position: relative;
+    transition: background-color 0.5s ease;
+    align-items: cemter;
+margin-bottom: 90px;
+height: 100vh;
+}
+
+.background-blend-section video {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.changing-background-container {
+    position: relative;
+
+}
+
+.color-changing-text {
+    font-size: 100px;
+    font-weight: 600;
+    transition: color 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
+    margin-left: 10%;
+    padding-top: 125px;
+    transform: translateX(-100%); /* Initial position off-screen to the left */
+    opacity: 0; /* Initial state hidden */
+}
+
+.changing-background-container.in-view .color-changing-text {
+    transform: translateX(0); /* Final position */
+    opacity: 1; /* Fully visible */
+}
+
+
+.background-blend-section p {
+    font-size: 30px;
+    transition: color 0.5s ease;
+    margin-left: 10%;
+    border-bottom: solid 20px blue;
+    padding-bottom: 40px;
+    max-width: 70%;
+    border-bottom-color: currentcolor;
+}
+.button-2{
+    background-color: #16537e;
+    border-color: #ff9302;
+}
+
+.full-width-news-scroll{
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 90px;
+}
+
+.individual-news{
+    display: flex;
+    margin-bottom: 40px;
+    gap: 20px;
+    box-shadow: 2px 2px 6px 2px lightgray;
+}
+.individual-news img{
+    max-width: 25%;
+    min-height: 325px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.news-text-container{
+    display: flex;
+}
+.news-text-container p{
+    font-size: 40px;
+    max-width: 1000px;
+    margin-top: 0px;
+    padding: 20px;
+    border-bottom: 8px solid black;
+
+}
+.arrow{
+    font-size: 30px;
+    padding: 20px;
+}
+footer{
+    min-height: 400px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+.footer-container{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 40px;
+    padding-top: 100px;
+}
+.contact-us, .logo{
+    max-width: 35%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.socials ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 100px;
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
